@@ -9,17 +9,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-var inputName = personNameTextId.text
-confirmButtonId.setOnClickListener {
+        
+        var inputName = personNameTextId.text
+        confirmButtonId.setOnClickListener {
 
-    if(inputName.isEmpty())
-    {
-        Toast.makeText(this, "Please, enter a name", Toast.LENGTH_LONG).show()
-    }
-    else
-    {
-        Toast.makeText(this, "Hi, $inputName", Toast.LENGTH_LONG).show()
-    }
+        if(inputName.isEmpty())
+        {
+            Toast.makeText(this, "Please, enter a name", Toast.LENGTH_LONG).show()
+        }
+        else
+        {
+            Toast.makeText(this, "Hi, $inputName", Toast.LENGTH_LONG).show()
+        }
 
-}}
+        }
+    }
 }
